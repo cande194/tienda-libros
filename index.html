@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tienda de Libros</title>
+</head>
+<body>
+    <h1>Tienda de Libros</h1>
+    
+    <div>
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" required>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" min="0" step="0.01" required>
+        
+        <button id="agregar_libro">Agregar Libro</button>
+    </div>
+    
+    <h2>Libros Disponibles</h2>
+    <div id="libros_disponibles"></div>
+    
+    <h2>Carrito de Compras</h2>
+    <div id="carrito"></div>
+    <p><strong>Total: $<span id="total">0</span></strong></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
